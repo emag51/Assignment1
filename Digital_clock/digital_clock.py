@@ -3,10 +3,10 @@ from time import strftime
 
 
 def light_theme():
-    frame = tk.Frame(root, bg="white")
+    frame = tk.Frame(root, bg="yellow")
     frame.place(relx=0.1, rely=0.1, relwidth=0.8, relheight=0.8)
     lbl_1 = tk.Label(frame, font=('calibri', 40, 'bold'),
-                     background='White', foreground='black')
+                     background='yellow', foreground='black')
     lbl_1.pack(anchor="s")
 
     def time():
@@ -35,10 +35,10 @@ root.title("Digital-Clock")
 canvas = tk.Canvas(root, height=140, width=400)
 canvas.pack()
 
-frame = tk.Frame(root, bg='#22478a')
+frame = tk.Frame(root, bg='#111111')
 frame.place(relx=0.1, rely=0.1, relwidth=0.8, relheight=0.8)
 lbl = tk.Label(frame, font=('calibri', 40, 'bold'),
-                     background='#22478a', foreground='black')
+                     background='#ffffff', foreground='black')
 lbl.pack(anchor="s")
 
 def time():
